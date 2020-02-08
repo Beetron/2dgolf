@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://ball.png" type="Texture" id=1]
-[ext_resource path="res://Test.gd" type="Script" id=2]
-[ext_resource path="res://RigidBody2D.gd" type="Script" id=3]
+[ext_resource path="res://Player.gd" type="Script" id=2]
+[ext_resource path="res://Ball.gd" type="Script" id=3]
+[ext_resource path="res://ring.png" type="Texture" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 31.7567
@@ -15,16 +16,19 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Node2D" type="Node2D"]
-position = Vector2( 432.598, 59.8564 )
+[node name="Player" type="Node2D"]
+position = Vector2( 568.295, 302.819 )
 script = ExtResource( 2 )
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
+[node name="Ball" type="RigidBody2D" parent="."]
 gravity_scale = 0.0
 script = ExtResource( 3 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ball"]
 shape = SubResource( 1 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="RigidBody2D"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Ball"]
 frames = SubResource( 2 )
+
+[node name="Control Ring" type="Sprite" parent="Ball"]
+texture = ExtResource( 5 )
