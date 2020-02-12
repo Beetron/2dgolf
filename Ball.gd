@@ -11,6 +11,7 @@ func _ready():
 	pass # Replace with function body.
 
 func _input(event):
+	
 	if (event is InputEventMouseButton and event.button_index == BUTTON_LEFT):	
 		if (event.pressed):
 			#Hide/Show control ring if mouse is pressed
@@ -18,11 +19,10 @@ func _input(event):
 		else:
 			#Execute a hit if within the threshold of the ring
 			if (self.global_position.distance_to(event.global_position) > hitThreshold):
-				var hit = self.global_position - event.global_position
+				var hit = (self.global_position - event.global_position) * power
 				apply_central_impulse(hit)
-				
 				ring.visible = false
-	return	
+	return
 
 func _integrate_forces(state):
 	#Apply friction
@@ -31,8 +31,9 @@ func _integrate_forces(state):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	
 	#Modulate transparency based on distance to ball
 	var distance = self.global_position.distance_to(get_viewport().get_mouse_position())
 	ring.modulate.a = distance / hitThreshold
+	print(self.global_position)
+	print(self.global_position)
 	pass
