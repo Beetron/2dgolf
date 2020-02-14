@@ -11,7 +11,6 @@ func _ready():
 	pass # Replace with function body.
 
 func _input(event):
-	
 	if (event is InputEventMouseButton and event.button_index == BUTTON_LEFT):	
 		if (event.pressed):
 			#Hide/Show control ring if mouse is pressed
@@ -34,6 +33,4 @@ func _process(delta):
 	#Modulate transparency based on distance to ball
 	var distance = self.global_position.distance_to(get_viewport().get_mouse_position())
 	ring.modulate.a = distance / hitThreshold
-	print(self.global_position)
-	print(self.global_position)
 	pass
