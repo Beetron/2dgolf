@@ -20,3 +20,8 @@ func _ready():
 func _on_Hole_body_entered(body):
 	winLabel.visible = true
 	pass # Replace with function body.
+
+
+func _on_OutOfBounds_body_entered(body):
+	winLabel.visible = true
+	pass # Replace with function body.
