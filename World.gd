@@ -1,6 +1,7 @@
 extends Node
 
-onready var winLabel = $"WinLabel"
+onready var winLabel = $"Player/Ball/WinLabel"
+onready var deadzoneLabel = $"Player/Ball/DeadzoneLabel"
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -16,12 +17,16 @@ func _ready():
 #func _process(delta):
 #	pass
 
+func _on_OutOfBounds_body_shape_entered(body_id, body, body_shape, area_shape):
+	if(body.name == "Ball"):
+		#deadzoneLabel.visible = true
+		get_node("Player/Ball").outOfBounds = true
+	return
 
-func _on_Hole_body_entered(body):
-	winLabel.visible = true
-	pass # Replace with function body.
 
-
-func _on_OutOfBounds_body_entered(body):
-	winLabel.visible = true
-	pass # Replace with function body.
+func _on_Hole_body_shape_entered(body_id, body, body_shape, area_shape):
+	if(body.name == "Ball"):
+		#winLabel.visible = true
+		#get_tree().change_scene("res://Test2.tscn")
+		pass
+	pass

@@ -27,3 +27,27 @@ frames = SubResource( 2 )
 
 [node name="Control Ring" type="Sprite" parent="."]
 texture = ExtResource( 2 )
+
+[node name="DeadzoneLabel" type="RichTextLabel" parent="."]
+visible = false
+margin_left = -48.295
+margin_top = -86.819
+margin_right = 64.705
+margin_bottom = -46.819
+rect_scale = Vector2( 1.00534, 1 )
+text = "Out of Bounds!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WinLabel" type="RichTextLabel" parent="."]
+visible = false
+margin_left = -24.295
+margin_top = -94.819
+margin_right = 39.705
+margin_bottom = -54.819
+rect_scale = Vector2( 1.00534, 1 )
+text = "You Win"
+__meta__ = {
+"_edit_use_anchors_": false
+}
