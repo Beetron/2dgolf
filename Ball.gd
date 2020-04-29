@@ -1,7 +1,7 @@
 extends RigidBody2D
 
 export var frictionSlowdown = 0.03
-export var power = 3
+export var power = 8
 onready var ring = $"Control Ring"
 
 var hitThreshold = 125 #Not sure how to get access to the edge of the ring directly
