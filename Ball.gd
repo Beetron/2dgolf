@@ -2,7 +2,9 @@ extends RigidBody2D
 
 export var frictionSlowdown = 0.03
 export var power = 8
+signal shotCountChanged
 onready var ring = $"Control Ring"
+var shotCount = 0
 
 var hitThreshold = 125 #Not sure how to get access to the edge of the ring directly
 var stopThreshold = Vector2(1,1) #To test whether the ball has stopped
@@ -28,6 +30,8 @@ func _input(event):
 					apply_central_impulse(hit)
 					readyToHit = false
 					ring.visible = false
+					shotCount += 1
+					emit_signal("shotCountChanged", shotCount)
 	return
 
 func _integrate_forces(state):

@@ -26,5 +26,5 @@ func _on_Hole_body_shape_entered(body_id, body, body_shape, area_shape):
 	return
 
 func change_level():
-	print("Test")
+	get_node("Player/Ball").shotCount = 0
 	pass

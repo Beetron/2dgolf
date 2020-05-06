@@ -19,6 +19,13 @@ config/name="2D Golf"
 run/main_scene="res://Level A.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
 [rendering]
 
 quality/depth/hdr=false
