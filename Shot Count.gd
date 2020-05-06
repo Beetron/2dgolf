@@ -6,4 +6,5 @@ func _ready():
 
 func changeShotCount(shotCount):
 	text = "Shot Count: " + shotCount as String
+	GlobalPlayerVars.totalScore += 1
 	return

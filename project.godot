@@ -16,8 +16,12 @@ _global_script_class_icons={
 [application]
 
 config/name="2D Golf"
-run/main_scene="res://Level I.tscn"
+run/main_scene="res://Level A.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+GlobalPlayerVars="*res://GlobalPlayerVars.gd"
 
 [display]
 

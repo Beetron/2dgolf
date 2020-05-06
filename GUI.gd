@@ -8,4 +8,5 @@ func _ready():
 	
 func _on_Ball_shotCountChanged(shotCount):
 	get_node("HBoxContainer/Shot Count").changeShotCount(shotCount)
+	get_node("HBoxContainer/TotalShots").updateTotalCount()
 	return
