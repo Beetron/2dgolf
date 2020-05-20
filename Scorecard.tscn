@@ -1,0 +1,221 @@
+[gd_scene format=2]
+
+[node name="Scorecard" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 0.993
+margin_right = 1.0
+margin_bottom = 7.55994
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+margin_right = 14.0
+margin_bottom = 14.0
+
+[node name="GridContainer" type="GridContainer" parent="PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 185.0
+margin_bottom = 57.0
+columns = 11
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hole" type="Label" parent="PanelContainer/GridContainer"]
+margin_right = 35.0
+margin_bottom = 14.0
+text = "Hole"
+
+[node name="1" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 39.0
+margin_right = 47.0
+margin_bottom = 14.0
+text = "1"
+
+[node name="2" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 51.0
+margin_right = 59.0
+margin_bottom = 14.0
+text = "2"
+
+[node name="3" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 63.0
+margin_right = 71.0
+margin_bottom = 14.0
+text = "3"
+
+[node name="4" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 75.0
+margin_right = 83.0
+margin_bottom = 14.0
+text = "4"
+
+[node name="5" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 87.0
+margin_right = 95.0
+margin_bottom = 14.0
+text = "5"
+
+[node name="6" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 99.0
+margin_right = 107.0
+margin_bottom = 14.0
+text = "6"
+
+[node name="7" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 111.0
+margin_right = 119.0
+margin_bottom = 14.0
+text = "7"
+
+[node name="8" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 123.0
+margin_right = 131.0
+margin_bottom = 14.0
+text = "8"
+
+[node name="9" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 135.0
+margin_right = 143.0
+margin_bottom = 14.0
+text = "9"
+
+[node name="Total" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 147.0
+margin_right = 178.0
+margin_bottom = 14.0
+text = "Total"
+
+[node name="Par" type="Label" parent="PanelContainer/GridContainer"]
+margin_top = 18.0
+margin_right = 35.0
+margin_bottom = 32.0
+text = "Par"
+
+[node name="Par 1" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 39.0
+margin_top = 18.0
+margin_right = 47.0
+margin_bottom = 32.0
+
+[node name="Par 2" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 51.0
+margin_top = 18.0
+margin_right = 59.0
+margin_bottom = 32.0
+
+[node name="Par 3" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 63.0
+margin_top = 18.0
+margin_right = 71.0
+margin_bottom = 32.0
+
+[node name="Par 4" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 75.0
+margin_top = 18.0
+margin_right = 83.0
+margin_bottom = 32.0
+
+[node name="Par 5" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 87.0
+margin_top = 18.0
+margin_right = 95.0
+margin_bottom = 32.0
+
+[node name="Par 6" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 99.0
+margin_top = 18.0
+margin_right = 107.0
+margin_bottom = 32.0
+
+[node name="Par 7" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 111.0
+margin_top = 18.0
+margin_right = 119.0
+margin_bottom = 32.0
+
+[node name="Par 8" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 123.0
+margin_top = 18.0
+margin_right = 131.0
+margin_bottom = 32.0
+
+[node name="Par 9" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 135.0
+margin_top = 18.0
+margin_right = 143.0
+margin_bottom = 32.0
+
+[node name="Total Par" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 147.0
+margin_top = 18.0
+margin_right = 178.0
+margin_bottom = 32.0
+
+[node name="Shots" type="Label" parent="PanelContainer/GridContainer"]
+margin_top = 36.0
+margin_right = 35.0
+margin_bottom = 50.0
+text = "Shots"
+
+[node name="Shots 1" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 39.0
+margin_top = 36.0
+margin_right = 47.0
+margin_bottom = 50.0
+
+[node name="Shots 2" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 51.0
+margin_top = 36.0
+margin_right = 59.0
+margin_bottom = 50.0
+
+[node name="Shots 3" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 63.0
+margin_top = 36.0
+margin_right = 71.0
+margin_bottom = 50.0
+
+[node name="Shots 4" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 75.0
+margin_top = 36.0
+margin_right = 83.0
+margin_bottom = 50.0
+
+[node name="Shots 5" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 87.0
+margin_top = 36.0
+margin_right = 95.0
+margin_bottom = 50.0
+
+[node name="Shots 6" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 99.0
+margin_top = 36.0
+margin_right = 107.0
+margin_bottom = 50.0
+
+[node name="Shots 7" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 111.0
+margin_top = 36.0
+margin_right = 119.0
+margin_bottom = 50.0
+
+[node name="Shots 8" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 123.0
+margin_top = 36.0
+margin_right = 131.0
+margin_bottom = 50.0
+
+[node name="Shots 9" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 135.0
+margin_top = 36.0
+margin_right = 143.0
+margin_bottom = 50.0
+
+[node name="Total Shots" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 147.0
+margin_top = 36.0
+margin_right = 178.0
+margin_bottom = 50.0

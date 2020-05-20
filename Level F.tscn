@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Ball.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://GUI.tscn" type="PackedScene" id=5]
 [ext_resource path="res://grasstilemap.png" type="Texture" id=6]
 [ext_resource path="res://walltilemap.png" type="Texture" id=7]
+[ext_resource path="res://Scorecard.tscn" type="PackedScene" id=8]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Green"
@@ -148,7 +149,23 @@ __meta__ = {
 }
 
 [node name="GUI" parent="World" instance=ExtResource( 5 )]
+
+[node name="Scorecard" type="Control" parent="World" instance=ExtResource( 8 )]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 0.993
+margin_left = 683.0
+margin_top = 384.0
+margin_right = 1.0
+margin_bottom = 7.56006
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreCardTimer" type="Timer" parent="World"]
+wait_time = 4.0
 [connection signal="shotCountChanged" from="World/Player/Ball" to="World/GUI" method="_on_Ball_shotCountChanged"]
 [connection signal="body_shape_entered" from="World/Hole" to="World" method="_on_Hole_body_shape_entered"]
+[connection signal="timeout" from="World/ScoreCardTimer" to="World" method="_on_ScoreCardTimer_timeout"]
 
 [editable path="World/Player/Ball"]
