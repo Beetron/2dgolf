@@ -1,6 +1,6 @@
 extends "res://World.gd"
 
-export var par = 0
+var par = GlobalPlayerVars.par9
 
 func change_level():
 	#game over

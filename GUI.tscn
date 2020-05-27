@@ -21,22 +21,26 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Shot Count" type="Label" parent="HBoxContainer"]
-margin_top = 63.0
-margin_bottom = 77.0
+margin_right = 573.0
+margin_bottom = 140.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Par" type="Label" parent="HBoxContainer"]
-margin_left = 4.0
-margin_top = 63.0
-margin_right = 4.0
-margin_bottom = 77.0
+margin_left = 577.0
+margin_right = 1150.0
+margin_bottom = 140.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="TotalShots" type="Label" parent="HBoxContainer"]
-margin_left = 8.0
-margin_top = 63.0
-margin_right = 8.0
-margin_bottom = 77.0
+margin_left = 1154.0
+margin_right = 1728.0
+margin_bottom = 140.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource( 3 )

@@ -1,10 +1,24 @@
-[gd_scene format=2]
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scorecard.gd" type="Script" id=1]
+[ext_resource path="res://Par 3.gd" type="Script" id=2]
+[ext_resource path="res://Par 1.gd" type="Script" id=3]
+[ext_resource path="res://Par 9.gd" type="Script" id=4]
+[ext_resource path="res://Par 2.gd" type="Script" id=5]
+[ext_resource path="res://Par 5.gd" type="Script" id=6]
+[ext_resource path="res://Par 6.gd" type="Script" id=7]
+[ext_resource path="res://Par 7.gd" type="Script" id=8]
+[ext_resource path="res://Par 8.gd" type="Script" id=9]
+[ext_resource path="res://Par 4.gd" type="Script" id=10]
+[ext_resource path="res://Total Par.gd" type="Script" id=11]
 
 [node name="Scorecard" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 0.993
 margin_right = 1.0
 margin_bottom = 7.55994
+rect_scale = Vector2( 3.2098, 3.2098 )
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -12,6 +26,9 @@ __meta__ = {
 [node name="PanelContainer" type="PanelContainer" parent="."]
 margin_right = 14.0
 margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="GridContainer" type="GridContainer" parent="PanelContainer"]
 margin_left = 7.0
@@ -99,60 +116,70 @@ margin_left = 39.0
 margin_top = 18.0
 margin_right = 47.0
 margin_bottom = 32.0
+script = ExtResource( 3 )
 
 [node name="Par 2" type="Label" parent="PanelContainer/GridContainer"]
 margin_left = 51.0
 margin_top = 18.0
 margin_right = 59.0
 margin_bottom = 32.0
+script = ExtResource( 5 )
 
 [node name="Par 3" type="Label" parent="PanelContainer/GridContainer"]
 margin_left = 63.0
 margin_top = 18.0
 margin_right = 71.0
 margin_bottom = 32.0
+script = ExtResource( 2 )
 
 [node name="Par 4" type="Label" parent="PanelContainer/GridContainer"]
 margin_left = 75.0
 margin_top = 18.0
 margin_right = 83.0
 margin_bottom = 32.0
+script = ExtResource( 10 )
 
 [node name="Par 5" type="Label" parent="PanelContainer/GridContainer"]
 margin_left = 87.0
 margin_top = 18.0
 margin_right = 95.0
 margin_bottom = 32.0
+script = ExtResource( 6 )
 
 [node name="Par 6" type="Label" parent="PanelContainer/GridContainer"]
 margin_left = 99.0
 margin_top = 18.0
 margin_right = 107.0
 margin_bottom = 32.0
+script = ExtResource( 7 )
 
 [node name="Par 7" type="Label" parent="PanelContainer/GridContainer"]
 margin_left = 111.0
 margin_top = 18.0
 margin_right = 119.0
 margin_bottom = 32.0
+script = ExtResource( 8 )
 
 [node name="Par 8" type="Label" parent="PanelContainer/GridContainer"]
 margin_left = 123.0
 margin_top = 18.0
 margin_right = 131.0
 margin_bottom = 32.0
+script = ExtResource( 9 )
 
 [node name="Par 9" type="Label" parent="PanelContainer/GridContainer"]
 margin_left = 135.0
 margin_top = 18.0
 margin_right = 143.0
 margin_bottom = 32.0
+script = ExtResource( 4 )
 
 [node name="Total Par" type="Label" parent="PanelContainer/GridContainer"]
 margin_left = 147.0
 margin_top = 18.0
 margin_right = 178.0
 margin_bottom = 32.0
+script = ExtResource( 11 )
 
 [node name="Shots" type="Label" parent="PanelContainer/GridContainer"]
 margin_top = 36.0

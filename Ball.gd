@@ -25,8 +25,8 @@ func _input(event):
 				ring.visible = true
 			else:
 				#Execute a hit if within the threshold of the ring
-				if (self.global_position.distance_to(event.global_position) > hitThreshold && ring.visible == true):
-					var hit = (self.global_position - event.global_position) * power
+				if (self.global_position.distance_to(event.position) > hitThreshold && ring.visible == true):
+					var hit = (self.global_position - event.position) * power
 					apply_central_impulse(hit)
 					readyToHit = false
 					ring.visible = false

@@ -1,6 +1,6 @@
 extends "res://World.gd"
 
-export var par = 7
+var par = GlobalPlayerVars.par1
 
 func change_level():
 	get_tree().change_scene("res://Level B.tscn")

@@ -150,17 +150,11 @@ __meta__ = {
 
 [node name="GUI" parent="World" instance=ExtResource( 5 )]
 
-[node name="Scorecard" type="Control" parent="World" instance=ExtResource( 8 )]
+[node name="Scorecard" parent="World" instance=ExtResource( 8 )]
 visible = false
-anchor_right = 1.0
-anchor_bottom = 0.993
 margin_left = 683.0
 margin_top = 384.0
-margin_right = 1.0
 margin_bottom = 7.56006
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="ScoreCardTimer" type="Timer" parent="World"]
 wait_time = 4.0
