@@ -2,6 +2,8 @@ extends RigidBody2D
 
 export var frictionSlowdown = 0.03
 export var power = 8
+export var powerThreshold = Vector2(5000,5000)
+export var powerClamp = 5000
 signal shotCountChanged
 onready var ring = $"Control Ring"
 var shotCount = 0
@@ -27,6 +29,9 @@ func _input(event):
 				#Execute a hit if within the threshold of the ring
 				if (self.global_position.distance_to(event.position) > hitThreshold && ring.visible == true):
 					var hit = (self.global_position - event.position) * power
+					if(hit.abs() > powerThreshold):
+						hit = hit.clamped(powerClamp)
+					print(hit)
 					apply_central_impulse(hit)
 					readyToHit = false
 					ring.visible = false

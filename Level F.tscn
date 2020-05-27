@@ -118,11 +118,11 @@ script = ExtResource( 3 )
 position = Vector2( 568.295, 302.819 )
 script = ExtResource( 2 )
 
+[node name="Hole" parent="World/Player" instance=ExtResource( 4 )]
+position = Vector2( 575.705, 241.181 )
+
 [node name="Ball" parent="World/Player" instance=ExtResource( 1 )]
 position = Vector2( -200.295, 217.959 )
-
-[node name="Hole" parent="World" instance=ExtResource( 4 )]
-position = Vector2( 1144, 544 )
 
 [node name="Grass Layer" type="CanvasLayer" parent="World"]
 layer = -2
@@ -158,8 +158,8 @@ margin_bottom = 7.56006
 
 [node name="ScoreCardTimer" type="Timer" parent="World"]
 wait_time = 4.0
+[connection signal="body_shape_entered" from="World/Player/Hole" to="World" method="_on_Hole_body_shape_entered"]
 [connection signal="shotCountChanged" from="World/Player/Ball" to="World/GUI" method="_on_Ball_shotCountChanged"]
-[connection signal="body_shape_entered" from="World/Hole" to="World" method="_on_Hole_body_shape_entered"]
 [connection signal="timeout" from="World/ScoreCardTimer" to="World" method="_on_ScoreCardTimer_timeout"]
 
 [editable path="World/Player/Ball"]

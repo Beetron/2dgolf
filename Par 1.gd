@@ -1,5 +1,6 @@
 extends Label
 
 func _ready():
-	text = GlobalPlayerVars.par1 as String
+	var textVal = GlobalPlayerVars.par1 as String
+	text = " "+textVal+" "
 	return

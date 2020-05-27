@@ -16,8 +16,8 @@
 [node name="Scorecard" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 0.993
-margin_right = 1.0
-margin_bottom = 7.55994
+margin_right = -1920.0
+margin_bottom = -1072.44
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -33,7 +33,7 @@ __meta__ = {
 [node name="GridContainer" type="GridContainer" parent="PanelContainer"]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 350.0
+margin_right = 476.0
 margin_bottom = 126.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -50,70 +50,70 @@ text = "Hole"
 
 [node name="1" type="Label" parent="PanelContainer/GridContainer"]
 margin_left = 84.0
-margin_right = 98.0
+margin_right = 112.0
 margin_bottom = 37.0
 custom_fonts/font = ExtResource( 12 )
-text = "1"
+text = " 1 "
 
 [node name="2" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 102.0
-margin_right = 118.0
+margin_left = 116.0
+margin_right = 146.0
 margin_bottom = 37.0
 custom_fonts/font = ExtResource( 12 )
-text = "2"
+text = " 2 "
 
 [node name="3" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 122.0
-margin_right = 138.0
-margin_bottom = 37.0
-custom_fonts/font = ExtResource( 12 )
-text = "3"
-
-[node name="4" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 142.0
-margin_right = 159.0
-margin_bottom = 37.0
-custom_fonts/font = ExtResource( 12 )
-text = "4"
-
-[node name="5" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 163.0
+margin_left = 150.0
 margin_right = 180.0
 margin_bottom = 37.0
 custom_fonts/font = ExtResource( 12 )
-text = "5"
+text = " 3 "
+
+[node name="4" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 184.0
+margin_right = 215.0
+margin_bottom = 37.0
+custom_fonts/font = ExtResource( 12 )
+text = " 4 "
+
+[node name="5" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 219.0
+margin_right = 250.0
+margin_bottom = 37.0
+custom_fonts/font = ExtResource( 12 )
+text = " 5 "
 
 [node name="6" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 184.0
-margin_right = 202.0
+margin_left = 254.0
+margin_right = 286.0
 margin_bottom = 37.0
 custom_fonts/font = ExtResource( 12 )
-text = "6"
+text = " 6 "
 
 [node name="7" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 206.0
-margin_right = 222.0
+margin_left = 290.0
+margin_right = 320.0
 margin_bottom = 37.0
 custom_fonts/font = ExtResource( 12 )
-text = "7"
+text = " 7 "
 
 [node name="8" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 226.0
-margin_right = 244.0
+margin_left = 324.0
+margin_right = 356.0
 margin_bottom = 37.0
 custom_fonts/font = ExtResource( 12 )
-text = "8"
+text = " 8 "
 
 [node name="9" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 248.0
-margin_right = 266.0
+margin_left = 360.0
+margin_right = 392.0
 margin_bottom = 37.0
 custom_fonts/font = ExtResource( 12 )
-text = "9"
+text = " 9 "
 
 [node name="Total" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 270.0
-margin_right = 343.0
+margin_left = 396.0
+margin_right = 469.0
 margin_bottom = 37.0
 custom_fonts/font = ExtResource( 12 )
 text = "Total"
@@ -128,79 +128,79 @@ text = "Par"
 [node name="Par 1" type="Label" parent="PanelContainer/GridContainer"]
 margin_left = 84.0
 margin_top = 41.0
-margin_right = 98.0
+margin_right = 112.0
 margin_bottom = 78.0
 custom_fonts/font = ExtResource( 12 )
 script = ExtResource( 3 )
 
 [node name="Par 2" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 102.0
+margin_left = 116.0
 margin_top = 41.0
-margin_right = 118.0
+margin_right = 146.0
 margin_bottom = 78.0
 custom_fonts/font = ExtResource( 12 )
 script = ExtResource( 5 )
 
 [node name="Par 3" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 122.0
+margin_left = 150.0
 margin_top = 41.0
-margin_right = 138.0
+margin_right = 180.0
 margin_bottom = 78.0
 custom_fonts/font = ExtResource( 12 )
 script = ExtResource( 2 )
 
 [node name="Par 4" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 142.0
+margin_left = 184.0
 margin_top = 41.0
-margin_right = 159.0
+margin_right = 215.0
 margin_bottom = 78.0
 custom_fonts/font = ExtResource( 12 )
 script = ExtResource( 10 )
 
 [node name="Par 5" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 163.0
+margin_left = 219.0
 margin_top = 41.0
-margin_right = 180.0
+margin_right = 250.0
 margin_bottom = 78.0
 custom_fonts/font = ExtResource( 12 )
 script = ExtResource( 6 )
 
 [node name="Par 6" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 184.0
+margin_left = 254.0
 margin_top = 41.0
-margin_right = 202.0
+margin_right = 286.0
 margin_bottom = 78.0
 custom_fonts/font = ExtResource( 12 )
 script = ExtResource( 7 )
 
 [node name="Par 7" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 206.0
+margin_left = 290.0
 margin_top = 41.0
-margin_right = 222.0
+margin_right = 320.0
 margin_bottom = 78.0
 custom_fonts/font = ExtResource( 12 )
 script = ExtResource( 8 )
 
 [node name="Par 8" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 226.0
+margin_left = 324.0
 margin_top = 41.0
-margin_right = 244.0
+margin_right = 356.0
 margin_bottom = 78.0
 custom_fonts/font = ExtResource( 12 )
 script = ExtResource( 9 )
 
 [node name="Par 9" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 248.0
+margin_left = 360.0
 margin_top = 41.0
-margin_right = 266.0
+margin_right = 392.0
 margin_bottom = 78.0
 custom_fonts/font = ExtResource( 12 )
 script = ExtResource( 4 )
 
 [node name="Total Par" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 270.0
+margin_left = 396.0
 margin_top = 41.0
-margin_right = 343.0
+margin_right = 469.0
 margin_bottom = 78.0
 custom_fonts/font = ExtResource( 12 )
 script = ExtResource( 11 )
@@ -215,69 +215,69 @@ text = "Shots"
 [node name="Shots 1" type="Label" parent="PanelContainer/GridContainer"]
 margin_left = 84.0
 margin_top = 82.0
-margin_right = 98.0
+margin_right = 112.0
 margin_bottom = 119.0
 custom_fonts/font = ExtResource( 12 )
 
 [node name="Shots 2" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 102.0
+margin_left = 116.0
 margin_top = 82.0
-margin_right = 118.0
+margin_right = 146.0
 margin_bottom = 119.0
 custom_fonts/font = ExtResource( 12 )
 
 [node name="Shots 3" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 122.0
-margin_top = 82.0
-margin_right = 138.0
-margin_bottom = 119.0
-custom_fonts/font = ExtResource( 12 )
-
-[node name="Shots 4" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 142.0
-margin_top = 82.0
-margin_right = 159.0
-margin_bottom = 119.0
-custom_fonts/font = ExtResource( 12 )
-
-[node name="Shots 5" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 163.0
+margin_left = 150.0
 margin_top = 82.0
 margin_right = 180.0
 margin_bottom = 119.0
 custom_fonts/font = ExtResource( 12 )
 
-[node name="Shots 6" type="Label" parent="PanelContainer/GridContainer"]
+[node name="Shots 4" type="Label" parent="PanelContainer/GridContainer"]
 margin_left = 184.0
 margin_top = 82.0
-margin_right = 202.0
+margin_right = 215.0
+margin_bottom = 119.0
+custom_fonts/font = ExtResource( 12 )
+
+[node name="Shots 5" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 219.0
+margin_top = 82.0
+margin_right = 250.0
+margin_bottom = 119.0
+custom_fonts/font = ExtResource( 12 )
+
+[node name="Shots 6" type="Label" parent="PanelContainer/GridContainer"]
+margin_left = 254.0
+margin_top = 82.0
+margin_right = 286.0
 margin_bottom = 119.0
 custom_fonts/font = ExtResource( 12 )
 
 [node name="Shots 7" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 206.0
+margin_left = 290.0
 margin_top = 82.0
-margin_right = 222.0
+margin_right = 320.0
 margin_bottom = 119.0
 custom_fonts/font = ExtResource( 12 )
 
 [node name="Shots 8" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 226.0
+margin_left = 324.0
 margin_top = 82.0
-margin_right = 244.0
+margin_right = 356.0
 margin_bottom = 119.0
 custom_fonts/font = ExtResource( 12 )
 
 [node name="Shots 9" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 248.0
+margin_left = 360.0
 margin_top = 82.0
-margin_right = 266.0
+margin_right = 392.0
 margin_bottom = 119.0
 custom_fonts/font = ExtResource( 12 )
 
 [node name="Total Shots" type="Label" parent="PanelContainer/GridContainer"]
-margin_left = 270.0
+margin_left = 396.0
 margin_top = 82.0
-margin_right = 343.0
+margin_right = 469.0
 margin_bottom = 119.0
 custom_fonts/font = ExtResource( 12 )
